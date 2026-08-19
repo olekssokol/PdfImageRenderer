@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+    <PackageId>PdfImageRenderer</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>olekssokol</Authors>
+    <Description>A .NET library for rendering PDF pages as base64 data URL images using Docnet.Core and SkiaSharp.</Description>
+    <PackageTags>pdf;render;image;skia;docnet;base64</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/olekssokol/PdfImageRenderer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/olekssokol/PdfImageRenderer</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Docnet.Core" Version="2.6.0" />
+    <PackageReference Include="SkiaSharp" Version="3.119.0" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="3.119.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\NOTICES.txt" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
